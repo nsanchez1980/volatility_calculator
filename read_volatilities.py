@@ -64,6 +64,6 @@ if __name__=="__main__":
                 print(e)
             volume = 0
     with open(filename,"w") as output_file:
-        output_file.write("Pair,Volatility,Volume")
+        output_file.write("Pair,Volatility,Volume\n")
         for line in output:
             output_file.write(str(line)[1:-1]+"\n")
